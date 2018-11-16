@@ -19,6 +19,12 @@ open class BarChartDataEntry: ChartDataEntry
     /// the ranges for the individual stack values - automatically calculated
     private var _ranges: [Range]?
     
+    ///是否采用圆角
+    public var rounded: Bool = false
+    
+    ///高亮是否显示边框
+    public var isHighlightShowBorder: Bool = true
+    
     /// the sum of all negative values this entry (if stacked) contains
     private var _negativeSum: Double = 0.0
     
